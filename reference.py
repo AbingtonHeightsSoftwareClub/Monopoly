@@ -409,8 +409,14 @@ board = ["Go!", MediterraneanAve, BalticAve, "Income Tax", ReadingRR, OrientalAv
          "Go To Jail", PacificAve, NorthCarolinaAve, PennsylvaniaAve, ShortLine, ParkPlace, "Luxury Tax", BoardWalk]
 ## users are set with their money, space they land on, and any monopoly they owns after that
 ## userProp is the price for every property in the same order the propeties are listed in user
+
 Player = [1500, 0]
-PlayerProp = []
+## Every Player has their own list. Index 0 is the amount of $ that the Player has. Index 1 is the space that the player is on (0-31). Indexes 2+ are the names of Properties the Player owns.
+
+PlayerProp = [] 
+## Every Player has a property list. This list shows the rent price for each property. The rent price for property at index 0, for example, correlates with the property at Player at index 2.
+## The rent price at index 1 correlates with the property at index 3.
+
 Comp1 = [1500, 0]
 Comp1Prop = []
 Comp2 = [1500, 0]
