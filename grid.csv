@@ -1,12 +1,12 @@
 Tile,Type,Number
 Start,Tax,200
 Mediterranean Ave,Property,0
-Community Chest,Chest,0
+Community Chest1,Chest,0
 Baltic Ave,Property,1
 Income Tax,Tax,-200
 Reading Railroad,Railroad,2
 Oriental Ave,Property,3
-Chance, Chance,0
+Chance1, Chance,0
 Vermont Ave,Property,4
 Conneticut Ave,Property,5
 Jail,Blank,0
@@ -16,12 +16,12 @@ States Ave,Property,8
 Virginia Ave,Property,9
 Pennsylvania Railroad,Railroad,10
 St. James Place,Property,11
-Community Chest,Chest,0
+Community Chest2,Chest,0
 Tennesse Ave,Property,12
 New York Ave,Property,13
 Free Parking,Tax,0
 Kentucky Ave,Property,14
-Chance,Chance,0
+Chance2,Chance,0
 Indiana Ave,Property,15
 Illinois Ave,Property,16
 BO Railroad,Railroad,17
@@ -32,10 +32,10 @@ Marvin Gardins,Property,21
 Go To Jail,Jail,0
 Pacific Ave,Property,22
 North Carolina Ave,Property,23
-Community Chest,Chest,0
+Community Chest3,Chest,0
 Pennsylvania Ave,Property,24
 Short Line,Railroad,25
-Chance,Chance,0
+Chance3,Chance,0
 Park Place,Property,26
 Luxury Tax,Tax,-100
 Boardwalk,Property,27
