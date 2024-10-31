@@ -10,7 +10,7 @@ import pickle
 
 class Game:
     def __init__(self, players):
-        self.grid = []
+        self.grid = read_grid("grid.csv")
         self.players: List[Player] = players
         self.turn: int = 0
         self.properties: List[Property] = []
@@ -20,7 +20,7 @@ class Game:
         roll2 = random.randint(1,6)
         roll = roll1+roll2
         self.players[player_id].position += roll
-        self.players[player_id].position %= 22
+        self.players[player_id].position %= 40
 
     def buy(self, player_id):
         player = self.players[player_id]
@@ -41,6 +41,11 @@ class Game:
         with open("sample.json", "w") as outfile:
             json.dump(out, outfile)
 
+@dataclass
+class Tile:
+    title: str
+    tile_type: str
+    num: int
 
 @dataclass
 class Property:
@@ -78,7 +83,13 @@ class Player:
     def dict(self):
         return asdict(self)
 
-
+def read_grid(in_filename: str):
+    data = pd.read_csv(in_filename, index_col=0)
+    tiles = []
+    for title in data.index.values:
+        tiles.append(Tile(title, str(data.loc[title].iloc[0]), data.loc[title].iloc[1].item()))
+    return tiles
+    
 def read_data(in_filename: str):
     data = pd.read_csv(in_filename, index_col=0)
     properties = []
