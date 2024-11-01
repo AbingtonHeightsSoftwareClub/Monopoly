@@ -87,6 +87,13 @@ def read_data(in_filename: str):
         properties.append(Property(title, *values, data.loc[title].iloc[-1], -1))
     return properties
 
+def get_input() :
+    try: 
+        user_input = str(input('enter c to continue turn, x to stop '))
+    except TypeError:
+        print('that\'s not a valid input bro')
+        get_input()
+    return user_input
 
 tiles = read_data("properties.csv")
 player1 = Player(0, "Seamus", "dog", 0, 1500, [])
@@ -96,16 +103,17 @@ game.properties = tiles
 
 game.to_json()
 
-while True:
+while get_input() != 'x':
+    print('\n\n')
     ID = game.turn % len(game.players)
     print("Turn:", game.turn)
-    print(game.players[ID].title)
+    print('Player:', game.players[ID].title)
     game.roll(ID)
-    print(game.players[ID].position)
+    print('Position:', game.players[ID].position)
     game.buy(ID)
+    print('\nOwned properties: ')
     for property in game.players[ID].properties:
-        print(game.properties[property].title)
+        print('  ', game.properties[property].title)
     game.turn += 1
 
     print("\n\n")
-    sleep(2)
