@@ -78,6 +78,13 @@ class Player:
     def dict(self):
         return asdict(self)
 
+    def trade(self, other_player, property) :
+        if property in self.properties :
+            self.properties.remove(property)
+            other_player.properties.append(property)
+        else :
+            print("You don't own that property!")
+
 
 def read_data(in_filename: str):
     data = pd.read_csv(in_filename, index_col=0)
