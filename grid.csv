@@ -1,41 +1,41 @@
 Tile,Type,Number
 Start,Tax,200
 Mediterranean Ave,Property,0
-Community Chest,Chest,0
-Baltic Ave,Property,0
+Community Chest1,Chest,0
+Baltic Ave,Property,1
 Income Tax,Tax,-200
-Reading Railroad,Railroad,0
-Oriental Ave,Property,0
-Chance, Chance,0
-Vermont Ave,Property,0
-Conneticut Ave,Property,0
+Reading Railroad,Railroad,2
+Oriental Ave,Property,3
+Chance1, Chance,0
+Vermont Ave,Property,4
+Conneticut Ave,Property,5
 Jail,Blank,0
-St. Charles Place,Property,0
-Electric Company,Company,0
-States Ave,Property,0
-Virginia Ave,Property,0
-Pennsylvania Railroad,Railroad,0
-St. James Place,Property,0
-Community Chest,Chest,0
-Tennesse Ave,Property,0
-New York Ave,Property,0
+St. Charles Place,Property,6
+Electric Company,Company,7
+States Ave,Property,8
+Virginia Ave,Property,9
+Pennsylvania Railroad,Railroad,10
+St. James Place,Property,11
+Community Chest2,Chest,0
+Tennesse Ave,Property,12
+New York Ave,Property,13
 Free Parking,Tax,0
-Kentucky Ave,Property,0
-Chance,Chance,0
-Indiana Ave,Property,0
-Illinois Ave,Property,0
-BO Railroad,Railroad,0
-Atlantic Ave,Property,0
-Ventnor Ave,Property,0
-Water Works,Company,0
-Marvin Gardins,Property,0
+Kentucky Ave,Property,14
+Chance2,Chance,0
+Indiana Ave,Property,15
+Illinois Ave,Property,16
+BO Railroad,Railroad,17
+Atlantic Ave,Property,18
+Ventnor Ave,Property,19
+Water Works,Company,20
+Marvin Gardins,Property,21
 Go To Jail,Jail,0
-Pacific Ave,Property,0
-North Carolina Ave,Property,0
-Community Chest,Chest,0
-Pennsylvania Ave,Property,0
-Short Line,Railroad,0
-Chance,Chance,0
-Park Place,Property,0
+Pacific Ave,Property,22
+North Carolina Ave,Property,23
+Community Chest3,Chest,0
+Pennsylvania Ave,Property,24
+Short Line,Railroad,25
+Chance3,Chance,0
+Park Place,Property,26
 Luxury Tax,Tax,-100
-Boardwalk,Property,0
+Boardwalk,Property,27
